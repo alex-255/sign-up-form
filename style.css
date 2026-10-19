@@ -74,9 +74,11 @@ main {
   flex-direction: column;
   justify-content: space-between;
   padding-top: 50px;
+  background-color: rgba(248, 248, 248, 0.5);
 
   p {
-    margin: 0 0 30px 30px;
+    padding: 0 0 30px 30px;
+    background-color: white;
   }
 
   label {
@@ -89,6 +91,7 @@ main {
 .form-section .row {
   display: flex;
   padding-left: 30px;
+  background-color: white;
 
   .item {
     display: flex;
@@ -120,16 +123,16 @@ input[type="tel"] {
   font-size: 1.1rem;
 }
 
-hr {
-  color: transparent;
-  box-shadow: 0px 1px 5px 0px gray;
+.last-row {
+  box-shadow: 0px 5px 5px 0px rgb(10 10 10 / 10%);
 }
 
-.btn-row {
+.row.btn-row {
   background-color: rgba(248, 248, 248, 0.5);
 
   p {
     margin: 0;
+    background-color: rgba(248, 248, 248, 0.5);
   }
 
   a {
