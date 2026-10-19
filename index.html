@@ -6,5 +6,78 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section class="logo-section">
+        <div class="image">
+          <img
+            src="./assets/images/halie-west-25xggax4bSA-unsplash.jpg"
+            alt="Picture of a green fern"
+          />
+          <div class="text-and-logo">
+            <img src="./assets/images/odin-lined.png" alt="The Odin logo" />
+            <h1>ODIN</h1>
+          </div>
+        </div>
+        <small>Photo by Halie West on Unsplash</small>
+      </section>
+      <section class="form-section">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sigh up
+          <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+        <p>Let's do this!</p>
+        <form action="">
+          <div class="row">
+            <div class="item">
+              <label for="first_name">First name</label>
+              <input type="text" id="first_name" name="first_name" />
+            </div>
+            <div class="item">
+              <label for="last_name">Last name</label>
+              <input type="text" id="last_name" name="last_name" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="item">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="item">
+              <label for="phone_number">Phone number</label>
+              <input type="tel" id="phone_number" name="phone_number" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="item">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                pattern="^.{8,}$"
+              />
+            </div>
+            <div class="item">
+              <label for="confirm_password">Phone number</label>
+              <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+                pattern="^.{8,}$"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="item">
+              <button type="submit">Create account</button>
+              <p>Already have account? <a href="">Log in</a></p>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
