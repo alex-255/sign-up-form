@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <main>
@@ -33,19 +34,37 @@
           <div class="row">
             <div class="item">
               <label for="first_name">First name *</label>
-              <input type="text" id="first_name" name="first_name" required />
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                required
+                class="border border-slate-300 rounded-md px-2 py-1 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
+              />
               <span></span>
             </div>
             <div class="item">
               <label for="last_name">Last name *</label>
-              <input type="text" id="last_name" name="last_name" required />
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                required
+                class="border border-slate-300 rounded-md px-2 py-1 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
+              />
               <span></span>
             </div>
           </div>
           <div class="row">
             <div class="item">
               <label for="email">Email *</label>
-              <input type="email" id="email" name="email" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="border border-slate-300 rounded-md px-2 py-1 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
+              />
               <span></span>
             </div>
             <div class="item">
@@ -57,6 +76,7 @@
                 id="phone_number"
                 name="phone_number"
                 pattern="\d{2}-\d{3}-\d{4}"
+                class="border border-slate-300 rounded-md px-2 py-1 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
               />
               <span></span>
             </div>
@@ -70,6 +90,7 @@
                 name="password"
                 pattern="^.{8,}$"
                 required
+                class="border border-slate-300 rounded-md px-2 py-1 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
               />
               <span></span>
             </div>
@@ -81,13 +102,16 @@
                 name="confirm_password"
                 pattern="^.{8,}$"
                 required
+                class="border border-slate-300 rounded-md px-2 py-1 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
               />
               <span></span>
             </div>
           </div>
           <div class="row btn-row">
             <div class="item">
-              <button type="submit">Create account</button>
+              <button type="submit" class="active:scale-95">
+                Create account
+              </button>
               <p>
                 <small>Already have account? <a href="">Log in</a></small>
               </p>

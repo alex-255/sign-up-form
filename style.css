@@ -161,3 +161,91 @@ input:user-invalid {
   top: 50%;
   right: 5px;
 }
+
+@media (max-width: 1024px) {
+  main {
+    border: none;
+    flex-direction: column;
+  }
+
+  .logo-section {
+    width: 100%;
+  }
+
+  .logo-section .image {
+    width: 100%;
+    height: 100%;
+    background-color: #596d48;
+    background-image: none;
+  }
+
+  .text-and-logo {
+    position: relative;
+    top: 0;
+    transform: none;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Norse", sans-serif;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  .logo-section small {
+    display: none;
+  }
+
+  .form-section {
+    width: 100%;
+
+    justify-content: flex-start;
+    padding-top: 10px;
+
+    p {
+      padding: 20px;
+    }
+  }
+
+  .form-section .row {
+    flex-direction: column;
+    padding: 0px 50px;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+    }
+
+    button {
+      border: none;
+      border-radius: 5px;
+      background-color: #596d48;
+      color: white;
+      width: fit-content;
+      padding: 10px 30px;
+      margin: 10px 10px 10px 10px;
+    }
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-section {
+    p {
+      padding: 10px;
+    }
+  }
+
+  .form-section .row {
+    padding: 0;
+  }
+}
